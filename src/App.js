@@ -9,13 +9,16 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/">
-            <Header />
-            <Home />
-          </Route>
-          <Route path="/checkout">
-            <h1>Hi this is checkout!</h1>
-          </Route>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Home />
+              </>
+            }
+          />
+          <Route path="checkout" element={<h1>THis is checkout page!</h1>} />
         </Routes>
       </div>
     </Router>
